@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>4학년_4_1_17p_학교종_20240308</title>
+<title>4학년_4_1_17p_학교종_20240310</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -361,6 +361,27 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,70,70);
+(lib.play_bg = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 레이어_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#444444").s().p("AizC0QhKhLAAhpQAAhpBKhKQBLhLBoABQBqgBBKBLQBKBKAABpQAABphKBLQhKBKhqAAQhoAAhLhKgAg+hmQgQAJAAATIAACWQAAASAQAJQAHAEAJAAQAJAAAHgEICChMQAQgIAAgTQAAgSgQgJIiChLQgIgFgIAAQgIAAgIAFg");
+	this.shape.setTransform(48.325,48.75);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("AhRBnQgPgJAAgSIAAiWQAAgTAQgJQAQgKAPAKICCBMQAQAJAAARQAAATgQAJIiCBLQgHAFgJAAQgIAAgIgFg");
+	this.shape_1.setTransform(50.175,48.725);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(22.9,23.3,50.9,50.900000000000006);
 (lib.stop = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -575,7 +596,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-7.8,-3.8,143,54.599999999999994);
 // stage content:
-(lib._4학년_4_1_17p_학교종_20240308 = function(mode,startPosition,loop,reversed) {
+(lib._4학년_4_1_17p_학교종_20240310 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = false; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -599,34 +620,44 @@ if (reversed == null) { reversed = false; }
 		/*메뉴 네비게이션*/
 		_this.listen_btn.on('click', function () {
 			_this.gotoAndStop('노래듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.expert_btn.on('click', function () {
 			_this.gotoAndStop('전문가창');
+			_this.play_btn.visible = true;
 		});
 		_this.listen2_btn.on('click', function () {
 			_this.gotoAndStop('반주듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.singAlong_btn.on('click', function () {
 			_this.gotoAndStop('따라부르');
+			_this.play_btn.visible = true;
 		});
 		/*플레이컨트롤*/
 		_this.play_btn.on('click', function () {
 			_this.play();
+			_this.play_btn.visible = false;
 		});
 		_this.pause_btn.on('click', function () {
 			_this.stop();
+			_this.play_btn.visible = true;
 		});
 		_this.stop1_btn.on('click', function () {
 			_this.gotoAndStop('노래듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.stop2_btn.on('click', function () {
 			_this.gotoAndStop('전문가창');
+			_this.play_btn.visible = true;
 		});
 		_this.stop4_btn.on('click', function () {
 			_this.gotoAndStop('반주듣기');
+			_this.play_btn.visible = true;
 		});
 		_this.stop3_btn.on('click', function(){
 			_this.gotoAndStop('따라부르');
+			_this.play_btn.visible = true;
 		});
 	}
 	this.frame_718 = function() {
@@ -1736,6 +1767,8 @@ if (reversed == null) { reversed = false; }
 	this.shape_251.setTransform(210.5063,443.7137,2.7915,2.7921);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_251},{t:this.shape_250},{t:this.shape_249},{t:this.shape_248},{t:this.shape_247},{t:this.shape_246},{t:this.shape_245},{t:this.shape_244},{t:this.shape_243},{t:this.shape_242},{t:this.shape_241},{t:this.shape_240},{t:this.shape_239},{t:this.shape_238},{t:this.shape_237},{t:this.shape_236},{t:this.shape_235},{t:this.shape_234},{t:this.shape_233},{t:this.shape_232},{t:this.shape_231},{t:this.shape_230},{t:this.shape_229},{t:this.shape_228}]}).to({state:[]},719).to({state:[{t:this.shape_251},{t:this.shape_250},{t:this.shape_249},{t:this.shape_248},{t:this.shape_247},{t:this.shape_246},{t:this.shape_245},{t:this.shape_244},{t:this.shape_243},{t:this.shape_242},{t:this.shape_241},{t:this.shape_240},{t:this.shape_239},{t:this.shape_238},{t:this.shape_237},{t:this.shape_236},{t:this.shape_235},{t:this.shape_234},{t:this.shape_233},{t:this.shape_232},{t:this.shape_231},{t:this.shape_230},{t:this.shape_229},{t:this.shape_228}]},40).to({state:[{t:this.shape_251},{t:this.shape_250},{t:this.shape_249},{t:this.shape_248},{t:this.shape_247},{t:this.shape_246},{t:this.shape_245},{t:this.shape_244},{t:this.shape_243},{t:this.shape_242},{t:this.shape_241},{t:this.shape_240},{t:this.shape_239},{t:this.shape_238},{t:this.shape_237},{t:this.shape_236},{t:this.shape_235},{t:this.shape_234},{t:this.shape_233},{t:this.shape_232},{t:this.shape_231},{t:this.shape_230},{t:this.shape_229},{t:this.shape_228}]},1159).wait(715));
 	// bg
+	this.instance_5 = new lib.play_bg("synched",0);
+	this.instance_5.setTransform(562.5,750.25,1,1,0,0,0,48.3,48.8);
 	this.shape_252 = new cjs.Shape();
 	this.shape_252.graphics.f("#FFFFFF").s().p("EAbGAwvQh5AAhWhWQhWhWAAh6QAAh6hWhWQhWhVh6AAMgjnAAAQh5AAhWBVQhWBWAAB6QAAB6hWBWQhWBWh6AAMg7mAAAQjsAAioioQininAAjsMAAAhPnQAAjsCnioQCoinDsAAMCs7AAAQDsAACoCnQCnCoAADsMAAABPnQAADsinCnQioCojsAAg");
 	this.shape_252.setTransform(639.325,457.45);
@@ -1748,7 +1781,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_255 = new cjs.Shape();
 	this.shape_255.graphics.f("#ED1C24").s().p("At7FeIAAiUIPPAAIAAonIPQAAIAAK7gAwjFeIAAq7ICoAAIAAInIAACUgAt7DKIAAonIPPAAIAAIngAt7DKgAt7ldg");
 	this.shape_255.setTransform(1097.175,248.575);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_255},{t:this.shape_254},{t:this.shape_253},{t:this.shape_252}]}).wait(2633));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_255},{t:this.shape_254},{t:this.shape_253},{t:this.shape_252},{t:this.instance_5}]}).wait(2633));
 	this._renderFirstFrame();
 }).prototype = p = new lib.AnMovieClip();
 p.nominalBounds = new cjs.Rectangle(640.5,247.9,640,1455.6999999999998);
@@ -1896,7 +1929,7 @@ function handleComplete(evt,comp) {
 	var preloaderDiv = document.getElementById("_preload_div_");
 	preloaderDiv.style.display = 'none';
 	canvas.style.display = 'block';
-	exportRoot = new lib._4학년_4_1_17p_학교종_20240308();
+	exportRoot = new lib._4학년_4_1_17p_학교종_20240310();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
